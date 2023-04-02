@@ -1,0 +1,14 @@
+image: ../../images/papers/insane.jpg
+
+title: "INSANE:"
+title_cont: Cross-Domain UAV Data Sets with Increased Number of Sensors for developing Advanced and Novel Estimators
+
+abstract: "For real-world applications, autonomous mobile robotic platforms must be capable of navigating safely in a multitude of different and dynamic environments with accurate and robust localization being a key prerequisite. To support further research in this domain, we present the INSANE data sets - a collection of versatile Micro Aerial Vehicle (MAV) data sets for cross-environment localization. The data sets provide various scenarios with multiple stages of difficulty for localization methods. These scenarios range from trajectories in the controlled environment of an indoor motion capture facility, to experiments where the vehicle performs an outdoor maneuver and transitions into a building, requiring changes of sensor modalities, up to purely outdoor flight maneuvers in a challenging Mars analog environment to simulate scenarios which current and future Mars helicopters would need to perform. The presented work aims to provide data that reflects real-world scenarios and sensor effects. The extensive sensor suite includes various sensor categories, including multiple Inertial Measurement Units (IMUs) and cameras. Sensor data is made available as raw measurements and each data set provides highly accurate ground truth, including the outdoor experiments where a dual Real-Time Kinematic (RTK) Global Navigation Satellite System (GNSS) setup provides sub-degree and centimeter accuracy (1-sigma). The sensor suite also includes a dedicated high-rate IMU to capture all the vibration dynamics of the vehicle during flight to support research on novel machine learning-based sensor signal enhancement methods for improved localization. The data sets and post-processing tools are available at: ttps://sst.aau.at/cns/datasets"
+
+type: Preprint
+
+external:
+  - name: arxiv
+    url: https://arxiv.org/abs/2210.09114
+  - name: youtube
+    url: https://www.youtube.com/watch?v=KuA3nibxWok

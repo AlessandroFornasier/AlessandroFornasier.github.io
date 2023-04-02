@@ -1,0 +1,477 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  color: rgb(51, 51, 51) !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-color-light {
+  color: rgb(90, 100, 110);
+}
+
+.text-right {
+  text-align: end;
+}
+
+.btn-outline-dark {
+  color: rgb(51, 51, 51) !important;
+  border-color: rgb(90, 100, 110) !important;
+}
+
+.btn-outline-dark:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(90, 100, 110) !important;
+  border-color: rgb(90, 100, 110) !important;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/********** About ***********/
+
+/*#about-wrapper h1 {
+
+}
+
+#about-wrapper h2 {
+
+}*/
+
+#about-wrapper #navbar {
+  margin-top: -100%;
+  height: 50%;
+  position: fixed;
+  padding-bottom: 10%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  background-image: url("../../images/other/sidebar-bg-4.jpg");
+  background-size: cover;
+  background-position: 0 -30px;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  transition: width 0.3s, height 0s;
+}
+
+#about-wrapper #navbar img {
+  margin-top: 10%;
+  max-width: 125px;
+}
+
+#about-wrapper #sidebar {
+  width: 33%;
+  position: fixed;
+  padding-top: 10%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background-image: url("../../images/other/sidebar-bg-4.jpg");
+  background-size: cover;
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  transition: width 0.3s, height 0s;
+}
+
+#about-wrapper #sidebar span {
+  display: inline-block;
+}
+
+#about-wrapper #span-name {
+  margin-top: 3em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#about-wrapper #span-description {
+  margin-top: 1.5em;
+  letter-spacing: 0.125em;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2;
+}
+
+#about-wrapper #strong {
+  font-weight: 700;
+}
+
+#about-wrapper #sidebar img {
+  max-width: 125px;
+}
+
+#about-wrapper #icons {
+  margin-top: 10em;
+}
+
+#about-wrapper #sidebar a {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+#about-wrapper #sidebar a {
+  color:rgb(255, 255, 255) !important;
+}
+
+#about-wrapper #content {
+  margin-top: 10%;
+  margin-left: 43%;
+  margin-right: 10%;
+}
+
+#about-wrapper #content p {
+  margin-top: 5%;
+}
+
+#about-wrapper #content hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  #about-wrapper #navbar {
+    margin-top: 0;
+  }
+
+  #about-wrapper #sidebar {
+    margin-left: -100%;
+  }
+
+  #about-wrapper #content {
+    margin-top: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+#about-wrapper #content #button {
+  margin-top: 15%;
+}
+
+/****** Hover Button *******/
+
+.button-svg-wrapper {
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-svg-wrapper svg {
+  height: 70px;
+  width: 420px;
+}
+
+.button-svg-wrapper .shape {
+  height: 70px;
+  width: 420px;
+  fill: transparent;
+  stroke-dasharray: 150 700;
+  stroke-dashoffset: -625;
+  stroke-width: 6px;
+  stroke: rgb(51, 51, 51);
+}
+
+.button-svg-wrapper .text {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  top: -50px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 150 700;
+     stroke-dashoffset: -625;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-dasharray: 999;
+    stroke-dashoffset: 0;
+    stroke-width: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-svg-wrapper {
+    height: 40px;
+    width: 220px;
+  }
+  
+  .button-svg-wrapper svg {
+    height: 40px;
+    width: 220px;
+  }
+
+  .button-svg-wrapper .shape {
+    height: 40px;
+    width: 220px;
+    stroke-dasharray: 100 400;
+    stroke-dashoffset: -825;
+    stroke-width: 3px;
+  }
+
+  .button-svg-wrapper .text {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+    top: -30px;
+  }
+}
+
+/****************************/
+
+/****************************/
+
+
+/*********** profile ************/
+
+#profile-wrapper h2 {
+  font-size: 28px;
+}
+
+#profile-wrapper {
+  /*background-color: rgba(51, 51, 51, 0.05);*/
+  align-items: center;
+}
+
+#profile-wrapper a {
+  color: rgb(90, 100, 110);
+}
+
+#profile-wrapper a:hover {
+  color: rgb(51, 51, 51);
+}
+
+#profile-wrapper .navbar {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#profile-wrapper .navbar .container-fluid{
+  padding: 0;
+}
+
+#profile-wrapper .h3 {
+  font-size: calc(1.0rem + .6vw);
+}
+
+#profile-wrapper .navbar-toggler {
+  font-size: calc(1.0rem + .6vw);
+}
+
+#profile-wrapper .navbar .navbar-brand {
+  padding: 0;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+#profile-wrapper #navbarNavDropdown .nav-item {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: calc(0.5rem + .4vw);
+}
+
+#profile-wrapper #content {
+  margin-top: 10%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+#profile-wrapper #content .container {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+#profile-wrapper hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  color: rgb(90, 100, 110);
+  opacity: 1;
+}
+
+#profile-wrapper .article {
+  cursor: pointer;
+}
+
+.article #icons {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#profile-wrapper .article-divider {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  opacity: 0.5;
+}
+
+#profile-wrapper .policy-divider {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  opacity: 0.5;
+}
+
+#profile-wrapper .article-heading {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.025rem;
+  margin-right: 2.5%;
+}
+
+#profile-wrapper .article-description {
+  margin-top: 2.5%;
+  font-weight: 300;
+  text-align: justify;
+  margin-right: 2.5%;
+  font-size: min(17px, calc(1vw + 0.5vh + 1vmin));
+}
+
+#profile-wrapper #navigation {
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+
+#profile-wrapper #navigation a {
+  text-decoration-line: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+}
+
+#profile-wrapper #navigation .left {
+  margin-left: 25%;
+}
+
+#profile-wrapper #navigation .right {
+  margin-right: 25%;
+}
+
+#profile-wrapper #navigation p {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#profile-wrapper #footer p {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+#profile-wrapper #footer .copy {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#profile-wrapper #footer a {
+  text-decoration-line: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+  #profile-wrapper .h3 {
+    font-size: calc(0.8rem + .6vw);
+  }
+
+  #profile-wrapper .navbar-toggler {
+    font-size: calc(0.8rem + .6vw);
+  }
+}
+
+@media (max-width: 960px) {
+  #profile-wrapper .h3 {
+    font-size: calc(0.6rem + .8vw);
+  }
+
+  #profile-wrapper .navbar-toggler {
+    font-size: calc(0.6rem + .8vw);
+  }
+}
+
+@media (max-width: 768px) {
+  #profile-wrapper .navbar-nav  {
+    justify-content: unset;
+  }
+
+  #profile-wrapper .navbar-brand  {
+    display: inline-block;
+    white-space: normal;
+    width: 70%
+  }
+
+  #profile-wrapper .article-heading {
+    font-size: min(28px, calc(1.5vw + 1.0vh + 1vmin));
+  }
+  
+  .article #icons a {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-wrapper .article-heading {
+    font-size: min(40px, calc(1.5vw + 0.5vh + 0.5vmin));
+    font-size: max(28px, calc(1.5vw + 0.5vh + 0.5vmin));
+  }
+  
+  #profile-wrapper .article-heading-low-margin {
+    font-size: 40px;
+  }
+
+  .article #icons a {
+    font-size: 2.5em;
+  }
+}
+/****************************/

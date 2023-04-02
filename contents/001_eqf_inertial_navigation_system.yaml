@@ -1,0 +1,17 @@
+image: ../../images/papers/eqf_inertial_navigation_system.jpg
+
+title: Equivariant Filter Design 
+title_cont: for Inertial Navigation Systems with Input Measurement Biases
+
+abstract: Inertial Navigation Systems (INS) are a key technology for autonomous vehicles applications. Recent advances in estimation and filter design for the INS problem have exploited geometry and symmetry to overcome limitations of the classical Extended Kalman Filter (EKF) approach that formed the mainstay of INS systems since the mid-twentieth century. The industry standard INS filter, the Multiplicative Extended Kalman Filter (MEKF), uses a geometric construction for attitude estimation coupled with classical Euclidean construction for position, velocity and bias estimation. The recent Invariant Extended Kalman Filter (IEKF) provides a geometric framework for the full navigation states, integrating attitude, position and velocity, but still uses the classical Euclidean construction to model the bias states. In this paper, we use the recently proposed Equivariant Filter (EqF) framework to derive a novel observer for biased inertial-based navigation in a fully geometric framework.
+
+type: Conference
+published: 2022 IEEE International Conference on Robotics and Automation (ICRA)
+
+external:
+  - name: ieee
+    url: https://ieeexplore.ieee.org/abstract/document/9811778
+  - name: arxiv
+    url: https://arxiv.org/abs/2202.02058
+  - name: youtube
+    url: https://www.youtube.com/watch?v=an2Qy_xmx3Q

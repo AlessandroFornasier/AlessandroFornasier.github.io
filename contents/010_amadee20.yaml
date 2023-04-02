@@ -1,0 +1,12 @@
+image: ../../images/papers/amadee20.jpg
+
+title: AMADEE-20
+title_cont: Exploration Cascade using Robotic Vehicles
+
+abstract: While low-level auto pilot stacks for aerial vehicles focus on robust control, sensing, and estimation, the continuous advancement of higher-level autonomy for aerial vehicles requires much more complex higher-level flight stacks in order to enable safe, fully autonomous long-duration missions. Rather than focusing on the low-level control, high-level flight stacks are required to monitor the system's integrity continuously, initiate contingency plans, execute mission plans and adapt them in non-nominal situations, allow for proper data logging, and provide standardized interfaces and integrity verification for external mission planners and localization modules. To that end, we present our freely available, high-level flight stack dubbed CNS Flight Stack that meets the above requirements and at the same time a) is platform-agnostic through a generalized (embedded) hardware abstraction layer, b) uses low compute complexity for online use on embedded hardware, and c) can be extended with other sensor modalities, integrity checks, and mission modules. These additional properties make it reproducible on a variety of different platforms for safe and fully autonomous applications. We tested the proposed flight stack in over 450 real-world flights and report the failure modes our framework detected and also mitigated to avoid crashes of the aerial system.
+
+type: Workshop
+
+external:
+  - name: open
+    url: https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/450117/1/amadee2020planrobo.pdf

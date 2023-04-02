@@ -1,0 +1,13 @@
+image: ../../images/papers/rise.jpg
+
+title: "Radar-Inertial State-Estimation"
+title_cont: for UAV Motion in Highly Agile Manoeuvres
+
+abstract: Multicopter Unmanned Aerial Vehicles (UAV) are known for their high agility and aggressive manoeuvres. Despite significant advances in state estimation for such vehicles with multiple sensors, their accurate state estimation in highly agile manoeuvres is still a challenge in the research community. In this paper, we present a radar-inertial based method for estimating the full 6D pose and 3D velocity of a UAV including sensor extrinsics and Inertial Measurement Unit (IMU) intrinsics. In an Extended Kalman Filter (EKF) framework, we fuse range measurements of corner reflectors detected by a Frequency Modulated Continuous Wave (FMCW) radar sensor together with IMU readings. Our tightly coupled fusion approach and the high-frequency state correction together with the inherent benefits of radar sensors (e.g. resilience to aerosols, light changes, etc) enables tracking of highly aggressive trajectories in real experiments which are shown to be particularly challenging for a state of the art Visual-Inertial Odometry (VIO) approach we compare against.
+
+type: Conference
+published: 2022 International Conference on Unmanned Aircraft Systems (ICUAS)
+
+external:
+  - name: ieee
+    url: https://ieeexplore.ieee.org/abstract/document/9836130

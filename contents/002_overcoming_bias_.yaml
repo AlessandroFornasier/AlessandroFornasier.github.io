@@ -1,0 +1,17 @@
+image: ../../images/papers/overcoming_bias.jpg
+
+title: "Overcoming Bias:"
+title_cont: Equivariant Filter Design for Biased Attitude Estimation with Online Calibration
+
+abstract: Stochastic filters for on-line state estimation are a core technology for autonomous systems. The performance of such filters is one of the key limiting factors to a system's capability. Both asymptotic behavior (e.g., for regular operation) and transient response (e.g., for fast initialization and reset) of such filters are of crucial importance in guaranteeing robust operation of autonomous systems. This letter introduces a new generic formulation for a gyroscope aided attitude estimator using N direction measurements including both body-frame and reference-frame direction type measurements. The approach is based on an integrated state formulation that incorporates navigation, extrinsic calibration for all direction sensors, and gyroscope bias states in a single equivariant geometric structure. This newly proposed symmetry allows modular addition of different direction measurements and their extrinsic calibration while maintaining the ability to include bias states in the same symmetry. The subsequently proposed filter-based estimator using this symmetry noticeably improves the transient response, and the asymptotic bias and extrinsic calibration estimation compared to state-of-the-art approaches. The estimator is verified in statistically representative simulations and is tested in real-world experiments.
+
+type: Journal
+published: IEEE Robotics and Automation Letters
+
+external:
+  - name: ieee
+    url: https://ieeexplore.ieee.org/abstract/document/9905914
+  - name: arxiv
+    url: https://arxiv.org/abs/2209.12038
+  - name: github
+    url: https://github.com/aau-cns/ABC-EqF
