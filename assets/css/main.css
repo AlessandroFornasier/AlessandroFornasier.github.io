@@ -441,6 +441,14 @@ a.disabled {
 }
 
 @media (max-width: 768px) {
+  #about-wrapper #navbar  {
+    position: unset;
+  }
+
+  #about-wrapper #content {
+    margin-top: 10%;
+  }
+  
   #profile-wrapper .navbar-nav  {
     justify-content: unset;
   }
@@ -482,30 +490,6 @@ a.disabled {
 
   .article #icons a {
     font-size: 2.5em;
-  }
-}
-
-@media (max-width: 576px) {
-  #about-wrapper #content {
-    margin-top: 80%;
-  }
-}
-
-@media (max-width: 456px) {
-  #about-wrapper #content {
-    margin-top: 100%;
-  }
-}
-
-@media (max-width: 456px) {
-  #about-wrapper #content {
-    margin-top: 100%;
-  }
-}
-
-@media (max-width: 408px) {
-  #about-wrapper #content {
-    margin-top: 120%;
   }
 }
 
