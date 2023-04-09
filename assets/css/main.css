@@ -118,7 +118,7 @@ a.disabled {
 }
 
 #about-wrapper #icons {
-  margin-top: 10em;
+  margin-top: 20%;
 }
 
 #about-wrapper #sidebar a {
@@ -127,6 +127,10 @@ a.disabled {
 }
 
 #about-wrapper #sidebar a {
+  color:rgb(255, 255, 255) !important;
+}
+
+#about-wrapper #navbar a {
   color:rgb(255, 255, 255) !important;
 }
 
@@ -248,6 +252,10 @@ a.disabled {
     letter-spacing: 0.5em;
     font-weight: 600;
     top: -30px;
+  }
+
+  #about-wrapper #icons {
+    margin-top: 10%;
   }
 }
 
