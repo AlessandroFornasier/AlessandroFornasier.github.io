@@ -23,6 +23,7 @@ def render(articles_per_page: int):
     page_articles = []
     for i in range(len(files)):
         with open(files[i], "r") as file:
+            print(f"processing file: {file}")
             text = file.read()
         content = yaml.safe_load(text)
         links = []
