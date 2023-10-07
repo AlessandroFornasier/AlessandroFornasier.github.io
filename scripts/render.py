@@ -1,5 +1,7 @@
 import os
 import math
+import pdb
+
 import yaml
 import shutil
 from pathlib import Path
@@ -12,7 +14,7 @@ def render(articles_per_page: int):
     [os.remove(os.path.join(folder, file)) for folder in folders for file in os.listdir(folder)]
 
     # Get yaml files
-    files = list(Path("../contents").glob("*.yaml"))
+    files = sorted(list(Path("../contents").glob("*.yaml")))
     number_pages = math.ceil(len(files) / articles_per_page)
 
     # Get articles data from yaml files
